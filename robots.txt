@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jujutsu-kaisen-season-3-episode-count-release-date.vercel.app/sitemap.xml
+
+# Allow crawling of all content
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block access to common admin/system files if they exist
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: *.log
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
